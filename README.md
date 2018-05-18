@@ -3,7 +3,7 @@ An example PyTorch implementation of a standard ResNet-18 network served with Fl
 
 In order to use this:
 1. Clone the repository
-2. `cd` into the repository from a terminal, and run the `server.py` script to start the server. 
+2. Run the `server.py` script to start the server. 
 3. With the server activated, from a seperate terminal run the `request.py` script passing in the directory of the image to be classified using the `-i/--image` flag, (eg. `python3 request.py --image "cats.jpg"`)
 
 You will need both PyTorch and Flask installed in the Python environment from which the scripts are run
