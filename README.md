@@ -1,7 +1,7 @@
 # ResNet18-Flask
 An example PyTorch implementation of a standard ResNet-18 network served with Flask, inspired from [this](https://blog.keras.io/building-a-simple-keras-deep-learning-rest-api.html) tutorial.
 
-![image](https://github.com/irhumshafkat/irhumshafkat.github.io/blob/master/carbonlong.png)
+![image](https://github.com/irhumshafkat/generalRepo/blob/master/resources/carbonlong.png)
 
 In order to use this:
 1. Clone the repository
