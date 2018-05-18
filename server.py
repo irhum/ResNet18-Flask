@@ -2,6 +2,7 @@ from torchvision import models, transforms
 from PIL import Image
 import flask
 import torch
+import torch.nn.functional as F
 import json
 import io
 
@@ -49,7 +50,7 @@ def predict():
             image = transform_image(image)
             image = image.view(-1, 3, 224, 224)
             
-            prediction = model(image)[0]
+            prediction = F.softmax(model(image)[0])
             topk_vals, topk_idxs = torch.topk(prediction, 3)
             
             data["predictions"] = []
